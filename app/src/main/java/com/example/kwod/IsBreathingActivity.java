@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Is_Breathing extends AppCompatActivity {
+public class IsBreathingActivity extends AppCompatActivity {
 
     public static final String IS_BREATHING_MESSAGE = "IS_BREATHING_MESSAGE";
     @Override

@@ -10,40 +10,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KWOD">
         <activity
-            android:name=".Emergency_call"
+            android:name=".EmergencyCallActivity"
             android:exported="false" />
         <activity
-            android:name=".Stayin_alive_small_child"
+            android:name=".StayinAliveSmallChildActivity"
             android:exported="false" />
         <activity
-            android:name=".Stayin_alive_toddler"
+            android:name=".StayinAliveToddlerActivity"
             android:exported="false" />
         <activity
             android:name=".EndHelpActivity"
             android:exported="false" />
         <activity
-            android:name=".Stayin_alive"
+            android:name=".StayinAliveActivity"
             android:exported="false" />
         <activity
-            android:name=".Is_not_breathing"
+            android:name=".IsNotBreathingActivity"
             android:exported="false" />
         <activity
-            android:name=".Is_Breathing"
+            android:name=".IsBreathingActivity"
             android:exported="false" />
         <activity
-            android:name=".Breath_check"
+            android:name=".BreathCheckActivity"
             android:exported="false" />
         <activity
-            android:name=".unconscious"
+            android:name=".UnconsciousActivity"
             android:exported="false" />
         <activity
-            android:name=".conscious"
+            android:name=".ConsciousActivity"
             android:exported="false" />
         <activity
-            android:name=".consciusness_activity"
+            android:name=".ConsciousnessActivity"
             android:exported="false" />
         <activity
-            android:name=".Accident_activity"
+            android:name=".AccidentActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

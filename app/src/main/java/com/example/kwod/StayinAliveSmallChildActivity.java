@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Stayin_alive_small_child extends AppCompatActivity {
+public class StayinAliveSmallChildActivity extends AppCompatActivity {
 
     public static final String STAYIN_ALIVE_SMALL_CHILD_MESSAGE = "STAYIN_ALIVE_SMALL_CHILD_MESSAGE";
     @Override

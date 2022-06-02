@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class unconscious extends AppCompatActivity
+public class UnconsciousActivity extends AppCompatActivity
 {
 
     public static final String UNCONSCIOUS_MESSAGE = "unconscious_message" ;
@@ -24,7 +24,7 @@ public class unconscious extends AppCompatActivity
 
     public void launchBreathCheckActivity(View view)
     {
-        Intent intent = new Intent(this, Breath_check.class);
+        Intent intent = new Intent(this, BreathCheckActivity.class);
         String Unconscious_message ="Unconscious_message";
         intent.putExtra(UNCONSCIOUS_MESSAGE, Unconscious_message);
         startActivity(intent);

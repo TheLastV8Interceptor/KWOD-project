@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Breath_check extends AppCompatActivity {
+public class BreathCheckActivity extends AppCompatActivity {
 
     public static final String BREATH_CHECK_MESSAGE = "breath_check_message" ;
 
@@ -28,7 +28,7 @@ public class Breath_check extends AppCompatActivity {
 
     public void launchIsBreathingActivity(View view)
     {
-        Intent intent = new Intent(this, Is_Breathing.class);
+        Intent intent = new Intent(this, IsBreathingActivity.class);
         String Is_Breathing_message ="Is_Breathing_message";
         intent.putExtra(BREATH_CHECK_MESSAGE, Is_Breathing_message);
         startActivity(intent);
@@ -37,7 +37,7 @@ public class Breath_check extends AppCompatActivity {
 
     public void launchIsNotBreathingActivity(View view)
     {
-        Intent intent = new Intent(this, Is_not_breathing.class);
+        Intent intent = new Intent(this, IsNotBreathingActivity.class);
         String Breath_check_message ="Breath_check_message";
         intent.putExtra(BREATH_CHECK_MESSAGE, Breath_check_message);
         startActivity(intent);

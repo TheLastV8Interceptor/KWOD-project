@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Is_not_breathing">
+    tools:context=".IsNotBreathingActivity">
 
     <Button
         android:id="@+id/accident_activity_unconscious_Is_Not_Breathing_get_emergency"

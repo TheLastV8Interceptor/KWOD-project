@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Stayin_alive_small_child">
+    tools:context=".StayinAliveSmallChildActivity">
 
     <Button
         android:id="@+id/accident_activity_unconscious_get_emergency_stayin_alive_small_child"

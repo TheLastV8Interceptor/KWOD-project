@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Emergency_call extends AppCompatActivity {
+public class EmergencyCallActivity extends AppCompatActivity {
 
     public static final String EMERGENCY_CALL_MESSAGE = "EMERGENCY_CALL_MESSAGE";
     @Override
@@ -32,7 +32,7 @@ public class Emergency_call extends AppCompatActivity {
 
     public void launchStayinAliveActivity(View view)
     {
-        Intent intent = new Intent(this, Stayin_alive.class);
+        Intent intent = new Intent(this, StayinAliveActivity.class);
         String Emergency_call ="Emergency_call_message";
         intent.putExtra(EMERGENCY_CALL_MESSAGE, Emergency_call);
         startActivity(intent);
@@ -41,7 +41,7 @@ public class Emergency_call extends AppCompatActivity {
 
     public void launchStayinAliveSmallChildActivity(View view)
     {
-        Intent intent = new Intent(this, Stayin_alive_small_child.class);
+        Intent intent = new Intent(this, StayinAliveSmallChildActivity.class);
         String Emergency_call ="Emergency_call_message";
         intent.putExtra(EMERGENCY_CALL_MESSAGE, Emergency_call);
         startActivity(intent);
@@ -50,7 +50,7 @@ public class Emergency_call extends AppCompatActivity {
 
     public void launchStayinAliveToddlerActivity(View view)
     {
-        Intent intent = new Intent(this, Stayin_alive_small_child.class);
+        Intent intent = new Intent(this, StayinAliveSmallChildActivity.class);
         String Emergency_call ="Emergency_call_message";
         intent.putExtra(EMERGENCY_CALL_MESSAGE, Emergency_call);
         startActivity(intent);

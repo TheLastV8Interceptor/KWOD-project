@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".consciusness_activity">
+    tools:context=".ConsciousnessActivity">
 
     <Button
         android:id="@+id/accident_activity_conscious_button"

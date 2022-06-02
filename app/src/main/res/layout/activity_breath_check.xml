@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Breath_check">
+    tools:context=".BreathCheckActivity">
 
     <Button
         android:id="@+id/accident_activity_breath_check_is_breathing"

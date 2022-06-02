@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchAccidentActivity(View view)
     {
-        Intent intent = new Intent(this, Accident_activity.class);
+        Intent intent = new Intent(this, AccidentActivity.class);
         String main_message ="main_message";
         intent.putExtra(MAIN_MESSAGE, main_message);
         startActivity(intent);

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Emergency_call">
+    tools:context=".EmergencyCallActivity">
 
     <Button
         android:id="@+id/accident_activity_emergency_call_stayin_alive"
