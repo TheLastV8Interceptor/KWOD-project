@@ -13,7 +13,7 @@ public class AccidentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_accident_acitivity);
+        setContentView(R.layout.activity_accident);
     }
 
     public void switch_to_consciousness_activity(View view)

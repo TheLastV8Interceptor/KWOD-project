@@ -6,32 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".StayinAliveSmallChildActivity">
 
-    <Button
-        android:id="@+id/accident_activity_unconscious_get_emergency_stayin_alive_small_child"
-        android:layout_width="300dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="636dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="45dp"
-        android:onClick="switch_to_EndHelpActivity"
-        android:text="Zakończ procedurę udzielania pomocy"
-        android:textColor="#424242"
-        app:backgroundTint="#FF9800"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
     <TextView
         android:id="@+id/accident_activity_unconscious_get_emergency_stayin_alive_small_child_title"
         android:layout_width="350dp"
         android:layout_height="150dp"
-        android:layout_marginStart="28dp"
         android:layout_marginTop="38dp"
-        android:layout_marginEnd="33dp"
         android:layout_marginBottom="593dp"
         android:gravity="center"
         android:text="Procedura resuscytacji dla małego dziecka:"
@@ -40,5 +19,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/accident_activity_unconscious_get_emergency_stayin_alive_small_child"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="636dp"
+        android:layout_marginBottom="45dp"
+        android:onClick="switch_to_EndHelpActivity"
+        android:text="Zakończ procedurę udzielania pomocy"
+        android:textColor="#424242"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
