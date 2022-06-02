@@ -30,7 +30,7 @@
         android:layout_marginTop="599dp"
         android:layout_marginBottom="52dp"
         android:onClick="switch_to_MainActivity"
-        android:text="Przejdź do początku"
+        android:text="PONÓW"
         app:backgroundTint="#FF9800"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

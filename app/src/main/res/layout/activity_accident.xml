@@ -40,7 +40,7 @@
         android:layout_marginTop="381dp"
         android:layout_marginBottom="300dp"
         android:onClick="switch_to_consciousness_activity"
-        android:text="Utrata przytomności"
+        android:text="RKO"
         android:textColor="#424242"
         app:backgroundTint="#FF9800"
         app:layout_constraintBottom_toBottomOf="parent"

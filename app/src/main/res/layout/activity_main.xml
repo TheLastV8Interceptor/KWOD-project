@@ -14,7 +14,7 @@
         android:layout_marginBottom="49dp"
         android:background="#FF9800"
         android:onClick="switch_to_accident"
-        android:text="ROZPOCZNIJ"
+        android:text="POMOC"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#424242"
         app:backgroundTint="#FF9800"
