@@ -30,7 +30,7 @@
         android:gravity="center"
         android:rotationY="0"
         android:scrollbarAlwaysDrawVerticalTrack="false"
-        android:text="KWOD SOS\nAsystent\npierwszej\npomocy"
+        android:text="KWOD SOS\n\nAsystent\nPierwszej\nPomocy\nPrzedmedycznej"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
