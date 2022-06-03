@@ -70,7 +70,8 @@ public class AccidentActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onEndOfSpeech() {
+            public void onEndOfSpeech()
+            {
                 speechRecognizer.startListening(intent);
             }
 
