@@ -82,15 +82,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onEndOfSpeech()
             {
-                //speechRecognizer.stopListening();
                 speechRecognizer.startListening(intent);
             }
 
             @Override
             public void onError(int i) {
-                //speechRecognizer.destroy();
-                //speechRecognizer = null;
-                //speechRecognizer.stopListening();
+
                 speechRecognizer.startListening(intent);
 
             }
@@ -109,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onPartialResults(Bundle bundle) {
+
                 ArrayList<String> data = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
                 String bestResult = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION).get(0);
                 Log.d("MainActivity", bestResult);
@@ -153,9 +151,6 @@ public class MainActivity extends AppCompatActivity {
         intent.setAction(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
-        intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS, Long.valueOf(10000));
-        //intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS, Long.valueOf(100));
-
     }
 
 

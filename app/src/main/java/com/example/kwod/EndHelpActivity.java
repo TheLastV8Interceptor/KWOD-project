@@ -139,7 +139,6 @@ public class EndHelpActivity extends AppCompatActivity {
         intent.setAction(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
-        intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS, Long.valueOf(10000));
 
     }
 
@@ -151,7 +150,7 @@ public class EndHelpActivity extends AppCompatActivity {
     public void launchMainActivity(View view)
     {
         speechRecognizer.destroy();
-        //speechRecognizer = null;
+        speechRecognizer = null;
         Intent intent = new Intent(this, MainActivity.class);
         String end_message ="end_message";
         intent.putExtra(END_HELP_MESSAGE, end_message);
