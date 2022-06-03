@@ -88,7 +88,7 @@ public class AccidentActivity extends AppCompatActivity {
                 String bestResult = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION).get(0);
 
                 Log.d("AccidentActivity", bestResult);
-                if(bestResult.equals("RKO") || bestResult.equals("RKO") || bestResult.equals("RKO"))
+                if(bestResult.equals("RKO") || bestResult.equals("RKO") || bestResult.equals("RKO") || bestResult.equals("ERKO") || bestResult.equals("Erko") || bestResult.equals("erko"))
                 {
                     switch_to_consciousness_activity(view);
                 }
@@ -99,7 +99,7 @@ public class AccidentActivity extends AppCompatActivity {
                 ArrayList<String> data = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
                 String bestResult = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION).get(0);
                 Log.d("AccidentActivity", bestResult);
-                if(bestResult.equals("RKO") || bestResult.equals("RKO") || bestResult.equals("RKO"))
+                if(bestResult.equals("RKO") || bestResult.equals("RKO") || bestResult.equals("RKO") || bestResult.equals("ERKO") || bestResult.equals("Erko") || bestResult.equals("erko"))
                 {
                     switch_to_consciousness_activity(view);
                 }
@@ -139,6 +139,8 @@ public class AccidentActivity extends AppCompatActivity {
         intent.setAction(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS, Long.valueOf(10000));
+        //intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS, Long.valueOf(100));
 
     }
 
@@ -150,6 +152,7 @@ public class AccidentActivity extends AppCompatActivity {
     public void launchConsciousnessActivity(View view)
     {
         speechRecognizer.destroy();
+        speechRecognizer = null;
         Intent intent = new Intent(this, ConsciousnessActivity.class);
         String accident_message ="accident_message";
         intent.putExtra(ACCIDENT_MESSAGE, accident_message);

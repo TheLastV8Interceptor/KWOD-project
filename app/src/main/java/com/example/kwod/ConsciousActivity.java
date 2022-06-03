@@ -142,6 +142,8 @@ public class ConsciousActivity extends AppCompatActivity {
         intent.setAction(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS, Long.valueOf(10000));
+        //intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS, Long.valueOf(100));
 
     }
 
@@ -154,6 +156,7 @@ public class ConsciousActivity extends AppCompatActivity {
     public void launchEndHelpActivity(View view)
     {
         speechRecognizer.destroy();
+        speechRecognizer = null;
         Intent intent = new Intent(this, EndHelpActivity.class);
         String conscious_message ="conscious_message";
         intent.putExtra(CONSCIOUS_MESSAGE, conscious_message);
