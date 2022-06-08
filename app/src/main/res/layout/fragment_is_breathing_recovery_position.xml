@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.IsBreathingRecoveryPositionFragment"
+    android:id="@+id/isBreathingRecoveryPositionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/accident_activity_unconscious_Is_Breathing_title"
+        app:layout_constraintBottom_toTopOf="@id/accident_activity_unconscious_Is_Breathing_EndHelpActivity_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Ułóż poszkodowanego w pozycji bocznej ustalonej jak na rysunku poniżej:\n1. Prawa ręka - kąt 90 stopni w łokciu\n2. Lewa ręka - pod prawy policzek\n3. Lewe kolano - do góry - najlepiej pociągając za nogawkę\n4. Trzymając lewe kolano i lewą rękę - obróć poszkodowanego na bok\n5. Delikatnie odchyl głowę - to ułatwi oddychanie"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/recovery_position">
+                </ImageView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
